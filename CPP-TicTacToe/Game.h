@@ -8,11 +8,11 @@ class Game
 
 public:
 
-	Game() { }
-	Game(const Game&) = delete;
-	virtual ~Game() { }
+	Game() { } //constructor
+	Game(const Game&) = delete; //copy constructor
+	virtual ~Game() { } //destructor
 
-	Game& operator=(const Game&) = delete;
+	Game& operator=(const Game&) = delete; //destructor
 
 
 	// Methods to be implemented by derived class
