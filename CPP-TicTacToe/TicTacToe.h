@@ -10,6 +10,7 @@ private:
 
 public:
     // Constructor
+
     TicTacToe() : m_CurrentPlayer('X') // Initialize the current player to X
     {
         for (int i = 0; i < 9; ++i) {
@@ -17,7 +18,12 @@ public:
         }
     }
 
-    // Override functions
+	// Destructor (default by compiler)
+
+	~TicTacToe() { }
+
+	// Member functions to be overridden in the cpp file 
+
     void Display() const override;    // Display the board
     bool IsGameOver() const override; // Check if the game is over
     void TakeTurn() override;         // Take the player's turn
